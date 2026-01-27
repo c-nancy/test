@@ -1,0 +1,11 @@
+{
+  "name": "penguin-personalities",
+  "version": "1.0.0",
+  "description": "企鹅性格测试应用",
+  "scripts": {
+    "build": "terser script.js -c -m --ecma 2015 -o script.min.js"
+  },
+  "devDependencies": {
+    "terser": "^5.19.0"
+  }
+}

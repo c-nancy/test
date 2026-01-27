@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企鹅人格测试 | 测试你是什么企鹅</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 欢迎页面 -->
+        <div id="welcome-section" class="section">
+            <h1>🐧 企鹅人格测试</h1>
+            <h2>测试你是什么企鹅</h2>
+            <p>欢迎来到企鹅人格测试！这个测试将帮助你发现你在企鹅社会中的对应类型。</p>
+            <p>测试包含10道题目，基于你在幻想企鹅社会中的行为选择，分析你的人格特征。</p>
+            <button id="start-test">开始测试</button>
+        </div>
+
+        <!-- 测试页面 -->
+        <div id="test-section" class="section hidden">
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <h2 id="question-number">问题 1/10</h2>
+            <h3 id="question-text">问题文本将显示在这里</h3>
+            <div id="options" class="options"></div>
+            <div class="navigation-buttons">
+                <button id="prev-btn" class="hidden">上一题</button>
+            </div>
+        </div>
+
+        <!-- 结果页面 -->
+        <div id="result-section" class="section hidden">
+            <h1>你的企鹅人格结果</h1>
+            <div id="result-container">
+                <div id="result-header">
+                    <h2 id="result-name">企鹅名称</h2>
+                    <div id="result-emoji">🐧</div>
+                </div>
+                <p id="result-description">结果描述将显示在这里</p>
+                <div id="result-personality">
+                    <h3>性格描述</h3>
+                    <p id="personality-description">性格描述将显示在这里</p>
+                </div>
+                <div id="result-image">
+                    <!-- 企鹅图片将通过JavaScript动态添加 -->
+                </div>
+            </div>
+            <button id="restart-test">重新测试</button>
+        </div>
+    </div>
+    <script src="script.min.js"></script>
+</body>
+</html>
